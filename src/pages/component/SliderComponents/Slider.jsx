@@ -14,6 +14,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import admin from '../../assets/committeeAssets/admin.png'
 import PrimaryButton from '../../Buttons/primaryButton';
 import PlayCircleFilledWhiteOutlinedIcon from '@mui/icons-material/PlayCircleFilledWhiteOutlined';
+//-------------------------------------------------
+import new1 from '../../assets/committeeAssets/new1.png';
+import new2 from '../../assets/committeeAssets/new2.png';
+import newOne from '../../assets/committeeAssets/newOne.png';
+import newTwo from '../../assets/committeeAssets/newTwo.png';
+
+
 
 export const Slider = () => {
     const cardVariants = {
@@ -112,8 +119,8 @@ export const Slider = () => {
                 >
                     <motion.img
                         // src={banner_img}
-                        src={admin}
-                        className="w-full max-w-md sm:max-w-lg lg:max-w-sm object-contain rounded-xl shadow-xl"
+                        src={newTwo}
+                        className="w-full max-w-md sm:max-w-lg lg:max-w-lg object-contain rounded-xl drop-shadow-xl"
 
                         //  className="w-full max-w-md sm:max-w-lg lg:max-w-xl object-contain"
                         animate={{

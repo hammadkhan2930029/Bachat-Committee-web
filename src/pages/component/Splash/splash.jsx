@@ -3,6 +3,8 @@ import banner_bg from '../../assets/new/banner_bg.png'
 import { ThreeDots } from 'react-loader-spinner'
 import { motion, useInView } from "framer-motion";
 import logo1 from '../../assets/committeeAssets/logo1.png';
+import logowhite from '../../assets/committeeAssets/logowhite.png';
+
 
 
 export const Splash = () => {
@@ -13,9 +15,11 @@ export const Splash = () => {
     const inViewOne = useInView(refOne, { triggerOnce: true });
     const inViewTwo = useInView(refTwo, { triggerOnce: true });
     return (
-        <div 
-        style={{ backgroundImage: `url(${banner_bg})` }}
-            className="bg-cover bg-center min-h-screen flex  justify-center items-center bg-[#F77F00]">
+
+        <div
+            // style={{ backgroundImage: `url(${banner_bg})` }}
+            // bg-[#F77F00]
+            className="bg-cover bg-center min-h-screen flex  justify-center items-center  bg-gradient-to-r from-[#ff6a00] via-[#f77f00] to-[#ffb347] shadow-[0_0_20px_rgba(247,127,0,0.6)]">
             <motion.div
                 className='flex flex-col justify-center items-center'
 
@@ -28,13 +32,15 @@ export const Splash = () => {
             >
 
                 <img src={logo1} className='object-contain w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] rounded-full shadow-xl' />
+
+               
                 <ThreeDots
                     height="60"
                     width="100"
                     radius="9"
-                    color="#003049"
+                    color="#ffffff"
                     ariaLabel="three-dots-loading"
-                    wrapperStyle={{ margin: '5px' }}
+                    wrapperStyle={{ margin: '8px' }}
                     wrapperClass="custom-loader"
                     visible={true}
                 />

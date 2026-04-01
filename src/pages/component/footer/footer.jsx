@@ -9,6 +9,10 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useLocation, useNavigate } from 'react-router-dom';
 import logo2 from '../../assets/committeeAssets/logo2.png'
+import logo3 from '../../assets/committeeAssets/logo3.png'
+import logo1 from '../../assets/committeeAssets/logo1.png'
+
+
 
 export const Footer = () => {
 
@@ -52,7 +56,7 @@ export const Footer = () => {
                             <img
                                 src={logo2}
                                 alt="Logo"
-                                className='object-contain w-[160px] md:w-[199px] lg:w-[160px] h-auto drop-shadow-[0_0_25px_rgba(247,127,0,0.5)]'
+                                className='object-contain w-[160px] md:w-[199px] lg:w-[160px] h-auto '
                             />
                         </motion.div>
                         <div className='w-[180px] md:w-[200px] lg:w-[200px] h-[3px] bg-[#F77F00] rounded-full mb-4'></div>

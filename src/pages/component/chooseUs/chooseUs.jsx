@@ -4,25 +4,41 @@ import 'react-slideshow-image/dist/styles.css'
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import BrushIcon from '@mui/icons-material/Brush';
 import WindowIcon from '@mui/icons-material/Window';
-import features01 from '../../assets/new/features01.png';
-import features02 from '../../assets/new/features02.png';
+// import features01 from '../../assets/new/features01.png';
+// import features02 from '../../assets/new/features02.png';
+import bc1 from '../../assets/committeeAssets/bc1.png'
+import bc2 from '../../assets/committeeAssets/bc2.png'
+import bc3 from '../../assets/committeeAssets/bc3.png'
+//-------------------------------------------------
+import new1 from '../../assets/committeeAssets/new1.png';
+import new2 from '../../assets/committeeAssets/new2.png';
+import newOne from '../../assets/committeeAssets/newOne.png';
+import newTwo from '../../assets/committeeAssets/newTwo.png';
+
+
 
 
 const data = [
     {
-        url: features01,
+        // url: features01,
+        url: newOne,
+
         icon: <WorkspacePremiumIcon className="icon" />,
         heading: 'Transparent Contributions',
         data1: 'All payments and member contributions are tracked automatically for complete transparency..',
     },
     {
-        url: features02,
+        // url: features02,
+        url: newTwo,
+
         icon: <BrushIcon className="icon" />,
         heading: 'Organized Committee Management',
         data1: 'Manage members, payout schedules, and monthly contributions without manual records..',
     },
     {
-        url: features01,
+        // url: features01,
+        url: bc3,
+
         icon: <WindowIcon className="icon" />,
         heading: 'Real-Time Notifications',
         data1: 'Get instant reminders and updates about contributions and payout turns.',
@@ -33,7 +49,7 @@ const data = [
 
 export const ChooseUs = forwardRef((props, ref) => {
 
-    const [currentImage, setCurrentImage] = useState(features01);
+    const [currentImage, setCurrentImage] = useState(bc1);
     const refOne = React.useRef(null);
     const refTwo = React.useRef(null);
 
@@ -50,13 +66,14 @@ export const ChooseUs = forwardRef((props, ref) => {
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
                 >
+                    {/* text-3xl md:text-5xl font-bold text-[#003049] mb-4 font-sans text-center */}
                     <div className="mb-8">
-                        <h1 className="text-3xl sm:text-4xl text-[#003049] font-sans md:text-5xl lg:text-6xl font-bold leading-snug sm:leading-tight md:leading-tight lg:leading-tight text-start ">
-                      Why Choose Our App {" "}
-                        <span className="text-[#F77F00]">
-                            Simple & User-Friendly
-                        </span>
-                    </h1>
+                        <h1 className="text-3xl text-[#003049] font-sans md:text-5xl  font-bold leading-snug sm:leading-tight md:leading-tight lg:leading-tight text-start ">
+                            Why Choose Our App {" "}
+                            <span className="text-[#F77F00]">
+                                Simple & User-Friendly
+                            </span>
+                        </h1>
                         <p className="text-[#003049] max-w-md font-sans">
                             Our app is designed so anyone can create or join a committee within minutes.
                         </p>
@@ -90,9 +107,9 @@ export const ChooseUs = forwardRef((props, ref) => {
 
                     <div className="relative z-10 w-full max-w-lg">
                         <img
-                            src={currentImage}
+                            src={newOne}
                             alt="Feature Illustration"
-                            className="w-full h-auto  drop-shadow-[0_0_25px_rgba(247,127,0,0.5)]"
+                            className="w-full  object-contain drop-shadow-[0_0_25px_rgba(247,127,0,0.5)] rounded-xl"
                         />
                     </div>
                 </motion.div>

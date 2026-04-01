@@ -3,29 +3,29 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
 // Swiper styles import karein
-import 'swiper/css';
-import barnd01 from '../../assets/new/icon/barnd01-2.png';
-import barnd02 from '../../assets/new/icon/barnd02-2.png';
-import barnd03 from '../../assets/new/icon/barnd03-2.png';
-import barnd04 from '../../assets/new/icon/barnd04-2.png';
-import barnd05 from '../../assets/new/icon/barnd05-2.png';
-import barnd06 from '../../assets/new/icon/barnd06-2.png';
+// import 'swiper/css';
+// import barnd01 from '../../assets/new/icon/barnd01-2.png';
+// import barnd02 from '../../assets/new/icon/barnd02-2.png';
+// import barnd03 from '../../assets/new/icon/barnd03-2.png';
+// import barnd04 from '../../assets/new/icon/barnd04-2.png';
+// import barnd05 from '../../assets/new/icon/barnd05-2.png';
+// import barnd06 from '../../assets/new/icon/barnd06-2.png';
 
 
 const LogoSlider = () => {
-  const logos = [
-    { name: 'Slack', url: barnd01 },
-    { name: 'Dropbox', url: barnd02 },
-    { name: 'Webflow', url: barnd03 },
-    { name: 'Zoom', url: barnd04 },
-    { name: 'Coinbase', url: barnd05 },
-    { name: 'Spotify', url: barnd06 },
-  ];
+  // const logos = [
+  //   { name: 'Slack', url: barnd01 },
+  //   { name: 'Dropbox', url: barnd02 },
+  //   { name: 'Webflow', url: barnd03 },
+  //   { name: 'Zoom', url: barnd04 },
+  //   { name: 'Coinbase', url: barnd05 },
+  //   { name: 'Spotify', url: barnd06 },
+  // ];
 
-  const duplicatedLogos = [...logos, ...logos];
+  // const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className="bg-[#FCBF49] py-8 flex justify-center items-center ">
+    <div className="bg-[#FCBF49] py-4 flex justify-center items-center shadow-xl">
       {/* <div className='w-5/6 '>
         <Swiper
           modules={[Autoplay]}

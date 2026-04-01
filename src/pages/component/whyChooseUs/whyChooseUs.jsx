@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import about01 from '../../assets/new/about01-2.png'
 import PrimaryButton from '../../Buttons/primaryButton';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import second from '../../assets/committeeAssets/second.png'
 export const WhyChooseUs = forwardRef((props, ref) => {
 
     const cardVariants = {
@@ -28,7 +29,7 @@ export const WhyChooseUs = forwardRef((props, ref) => {
                     transition={{ duration: .8 }}
                 >
                     <div className='w-2/2 md:w-2/3 lg:w-2/3'>
-                        <img src={about01} alt="Consulting" className="w-full h-auto object-contain z-10 " />
+                        <img src={second} alt="Consulting" className="w-full h-auto object-contain z-10 " />
                     </div>
 
                     <div className="absolute top-[15%] left-[8%] bg-white/90 backdrop-blur-sm py-3 px-2 md:px-4 lg:px-4 rounded-2xl md:rounded-3xl shadow-lg border border-gray-100 z-20 w-36 md:w-56 lg:w-64">

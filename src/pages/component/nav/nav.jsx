@@ -77,8 +77,7 @@ export const Nav = () => {
                 animate={inViewOne ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: .8 }}
 
-                className="w-full bg-transparent transition-all duration-300 px-4 md:px-10 py-4 relative z-50"
-            >
+                className="w-full bg-transparent transition-all duration-300 px-4 md:px-10  relative z-50 ">
                 <div className="flex items-center justify-between lg:justify-around ">
 
                     <div className="w-25 cursor-pointer">
