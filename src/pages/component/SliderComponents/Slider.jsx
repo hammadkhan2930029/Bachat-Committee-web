@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Nav } from '../nav/nav';
 import banner_bg from '../../assets/new/banner_bg.png'
 import { motion, AnimatePresence, useInView } from "framer-motion";
-import banner_img from '../../assets/new/banner_img-2.png'
 import banner_coin from '../../assets/new/banner_coin.png'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -10,15 +9,11 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-// import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
-import admin from '../../assets/committeeAssets/admin.png'
 import PrimaryButton from '../../Buttons/primaryButton';
 import PlayCircleFilledWhiteOutlinedIcon from '@mui/icons-material/PlayCircleFilledWhiteOutlined';
+import { AppImages } from '../../Constant/AppImages';
 //-------------------------------------------------
-import new1 from '../../assets/committeeAssets/new1.png';
-import new2 from '../../assets/committeeAssets/new2.png';
-import newOne from '../../assets/committeeAssets/newOne.png';
-import newTwo from '../../assets/committeeAssets/newTwo.png';
+
 
 
 
@@ -68,20 +63,20 @@ export const Slider = () => {
                                 Save Together, Grow Together
                             </span>
                         </h1>
-                       
+
                         <p className="text-base font-sans sm:text-lg md:text-lg lg:text-lg py-4 sm:py-6 max-w-md sm:max-w-lg lg:max-w-xl text-start ">
                             Manage your committee (BC) safely and transparently with our mobile app. Create groups, track contributions, and receive your turn without the stress of manual records.
                         </p>
                     </div>
 
                     <div className="w-full  flex font-sans flex-row lg-flex-row md:flex-row gap-4 mt-4 sm:mt-6">
-                      
+
                         <PrimaryButton title='Get Started' icon={ArrowForwardIcon} />
                         <div className="group bg-transparent text-[#003049] hover:text-white font-semibold rounded-xl transition-all duration-300 ease-in-out flex items-center justify-center gap-2 border border-[#D62828] px-6 py-3 text-sm md:px-8 md:py-4 md:text-base lg:px-10 lg:py-3 hover:bg-[#D62828] hover:shadow-lg active:scale-95">
                             <PlayCircleFilledWhiteOutlinedIcon className="text-xl text-[#D62828]  group-hover:text-white" />
                             <span>Watch Video</span>
                         </div>
-                    
+
                     </div>
                     <div className='w-full   flex flex-start pt-12 '>
                         <span className='text-[#003049] font-semibold font-sans'>Follow Us</span>
@@ -118,11 +113,9 @@ export const Slider = () => {
                     className="flex items-center justify-center px-4 sm:px-8 py-6 lg:py-0"
                 >
                     <motion.img
-                        // src={banner_img}
-                        src={newTwo}
+                        src={AppImages.newTwo}
                         className="w-full max-w-md sm:max-w-lg lg:max-w-lg object-contain rounded-xl drop-shadow-xl"
 
-                        //  className="w-full max-w-md sm:max-w-lg lg:max-w-xl object-contain"
                         animate={{
                             y: [0, -20, 0],
                             x: [0, 10, 0]
@@ -137,24 +130,7 @@ export const Slider = () => {
 
             </div>
 
-            {/* <div className="container">
-                
-            
-                <img className="coverImg" src={tradingCover} alt="cover" />
 
-             
-                <div className="btnDiv">
-                    <Button
-                        variant="contained"
-                        disableElevation
-                        className="sliderbtn"
-                        component={Link}
-                        to="/login"
-                    >
-                        Get Started
-                    </Button>
-                </div>
-            </div> */}
         </div>
     )
 }

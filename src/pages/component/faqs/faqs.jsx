@@ -3,8 +3,7 @@ import React, { useState, forwardRef, useEffect } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { motion, useInView } from "framer-motion";
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+import { AppImages } from '../../Constant/AppImages'
 import faq2 from '../../assets/new/faq-2.png'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { useNavigate } from 'react-router-dom';
@@ -123,8 +122,8 @@ export const Faqs = forwardRef((props, ref) => {
                         initial={{ opacity: 0, x: 100 }}
                         animate={inViewOne ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: .8 }}
-                        className='w-full md:w-full lg:w-[40%]  flex justify-center md:pt-5  lg:h-screen'>
-                        <img src={faq2} className='w-auto lg:w-[80%] object-contain drop-shadow-[0_0_25px_rgba(247,127,0,0.5)]' />
+                        className='w-full md:w-full lg:w-[40%]  flex justify-center   lg:h-screen'>
+                        <img src={AppImages.faq} className='w-auto lg:w-[80%] object-contain drop-shadow-[0_0_25px_rgba(247,127,0,0.5)]' />
                     </motion.div>
 
                 </div>
@@ -132,7 +131,7 @@ export const Faqs = forwardRef((props, ref) => {
             </div>
 
         </motion.div>
-       
+
 
     )
 })

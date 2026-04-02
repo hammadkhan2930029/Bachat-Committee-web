@@ -4,16 +4,8 @@ import 'react-slideshow-image/dist/styles.css'
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import BrushIcon from '@mui/icons-material/Brush';
 import WindowIcon from '@mui/icons-material/Window';
-// import features01 from '../../assets/new/features01.png';
-// import features02 from '../../assets/new/features02.png';
-import bc1 from '../../assets/committeeAssets/bc1.png'
-import bc2 from '../../assets/committeeAssets/bc2.png'
-import bc3 from '../../assets/committeeAssets/bc3.png'
-//-------------------------------------------------
-import new1 from '../../assets/committeeAssets/new1.png';
-import new2 from '../../assets/committeeAssets/new2.png';
-import newOne from '../../assets/committeeAssets/newOne.png';
-import newTwo from '../../assets/committeeAssets/newTwo.png';
+
+import { AppImages } from '../../Constant/AppImages';
 
 
 
@@ -21,7 +13,7 @@ import newTwo from '../../assets/committeeAssets/newTwo.png';
 const data = [
     {
         // url: features01,
-        url: newOne,
+        url: AppImages.newOne,
 
         icon: <WorkspacePremiumIcon className="icon" />,
         heading: 'Transparent Contributions',
@@ -29,7 +21,7 @@ const data = [
     },
     {
         // url: features02,
-        url: newTwo,
+        // url: newTwo,
 
         icon: <BrushIcon className="icon" />,
         heading: 'Organized Committee Management',
@@ -37,7 +29,7 @@ const data = [
     },
     {
         // url: features01,
-        url: bc3,
+        // url: bc3,
 
         icon: <WindowIcon className="icon" />,
         heading: 'Real-Time Notifications',
@@ -49,7 +41,7 @@ const data = [
 
 export const ChooseUs = forwardRef((props, ref) => {
 
-    const [currentImage, setCurrentImage] = useState(bc1);
+    // const [currentImage, setCurrentImage] = useState(bc1);
     const refOne = React.useRef(null);
     const refTwo = React.useRef(null);
 
@@ -66,7 +58,6 @@ export const ChooseUs = forwardRef((props, ref) => {
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
                 >
-                    {/* text-3xl md:text-5xl font-bold text-[#003049] mb-4 font-sans text-center */}
                     <div className="mb-8">
                         <h1 className="text-3xl text-[#003049] font-sans md:text-5xl  font-bold leading-snug sm:leading-tight md:leading-tight lg:leading-tight text-start ">
                             Why Choose Our App {" "}
@@ -83,7 +74,7 @@ export const ChooseUs = forwardRef((props, ref) => {
                         {data.map((item, index) => (
                             <motion.div
                                 key={index}
-                                onMouseEnter={() => setCurrentImage(item.url)}
+                                // onMouseEnter={() => setCurrentImage(item.url)}
                                 className="group p-6 bg-transparent hover:bg-white rounded-2xl transition-all duration-300 cursor-pointer border-1 border-gray-300 hover:shadow-xl hover:border-[#FCBF49] "
                             >
                                 <h3 className="text-lg font-bold text-[#003049] group-hover:text-[#F77F00] transition-colors font-sans">
@@ -107,7 +98,7 @@ export const ChooseUs = forwardRef((props, ref) => {
 
                     <div className="relative z-10 w-full max-w-lg">
                         <img
-                            src={newOne}
+                            src={AppImages.newOne}
                             alt="Feature Illustration"
                             className="w-full  object-contain drop-shadow-[0_0_25px_rgba(247,127,0,0.5)] rounded-xl"
                         />
